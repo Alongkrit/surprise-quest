@@ -1,0 +1,104 @@
+body{
+text-align:center;
+font-family:Arial;
+background:#020024;
+color:white;
+margin:0;
+padding:40px;
+overflow-x:hidden;
+}
+
+h1{
+font-size:40px;
+}
+
+.card{
+background:white;
+color:black;
+padding:20px;
+border-radius:15px;
+width:300px;
+margin:20px auto;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+button{
+padding:12px 25px;
+font-size:16px;
+background:#ff4d88;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+
+input{
+padding:10px;
+margin-top:10px;
+width:80%;
+}
+
+.hidden{
+display:none;
+}
+
+/* slideshow */
+
+.slideshow{
+width:260px;
+margin:auto;
+}
+
+.slide{
+width:100%;
+border-radius:10px;
+display:none;
+}
+
+/* heart rain */
+
+.hearts{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+}
+
+.heart{
+position:absolute;
+font-size:20px;
+animation:fall 5s linear infinite;
+}
+
+@keyframes fall{
+0%{transform:translateY(-10px);}
+100%{transform:translateY(100vh);}
+}
+
+/* stars */
+
+.stars{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:-1;
+}
+
+.star{
+position:absolute;
+width:2px;
+height:2px;
+background:white;
+border-radius:50%;
+animation:twinkle 3s infinite;
+}
+
+@keyframes twinkle{
+0%{opacity:0.2;}
+50%{opacity:1;}
+100%{opacity:0.2;}
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Surprise Quest ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="stars"></div>
+<div class="hearts"></div>
+
+<h1>Surprise Quest ❤️</h1>
+<p>Complete the quests to unlock my message...</p>
+
+<button onclick="startQuest()">Start Adventure</button>
+
+<audio id="bgMusic" loop>
+<source src="music/song.mp3" type="audio/mpeg">
+</audio>
+
+<div id="quest1" class="card hidden">
+<h2>Quest 1</h2>
+<p>When was our first date?</p>
+<input id="answer1">
+<button onclick="check1()">Submit</button>
+</div>
+
+<div id="quest2" class="card hidden">
+<h2>Quest 2</h2>
+<p>What is our favorite place together?</p>
+<input id="answer2">
+<button onclick="check2()">Submit</button>
+</div>
+
+<div id="quest3" class="card hidden">
+<h2>Quest 3</h2>
+<p>Who is my favourite person?</p>
+<input id="answer3">
+<button onclick="check3()">Submit</button>
+</div>
+
+<div id="quest4" class="card hidden">
+<h2>Quest 4</h2>
+<p>What nickname do I call you?</p>
+<input id="answer4">
+<button onclick="check4()">Submit</button>
+</div>
+
+<div id="final" class="hidden">
+
+<h1>I Love You ❤️</h1>
+
+<div class="slideshow">
+<img class="slide" src="photos/photo1.jpg">
+<img class="slide" src="photos/photo2.jpg">
+<img class="slide" src="photos/photo3.jpg">
+</div>
+
+<p id="loveText"></p>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
